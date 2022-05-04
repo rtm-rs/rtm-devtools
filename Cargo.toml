@@ -1,0 +1,49 @@
+[package]
+name = "rtm-devtools"
+version = "0.0.3"
+rust-version = "1.56.0"
+edition = "2021"
+authors = ["Begley Brothers Inc. <begleybrothers@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/rtm-rs/rtm-devtools"
+homepage = "https://rtm-rs.org"
+documentation = "https://docs.rs/rtm-devtools"
+description = """
+Rust Type Mapper (RTM) crate rtm-devtools.
+"""
+categories = [
+    "database",
+]
+keywords = ["async", "orm", "cqrs", "http", "sql"]
+autoexamples = false
+
+[lib]
+name = "rtm_devtools"
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1.0.57"
+thiserror = "1.0.30"
+
+[dev-dependencies]
+aquamarine = "0.1.11"
+criterion = { version = "0.3", features = ["html_reports"] }
+futures = "0.3"
+futures-timer = "3"
+mockall = "0.11"
+trybuild = "1"
+
+[features]
+# Nothing by default
+default = []
+
+[profile.bench]
+opt-level = 3
+lto = true
+
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
