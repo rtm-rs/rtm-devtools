@@ -5,7 +5,7 @@ name = "rust"
 enabled = true
 
 [analyzers.meta]
-msrv = "1.30.0"
+msrv = "1.56.0"
 
 [[transformers]]
 name = "rustfmt"
