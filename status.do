@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-readonly SUBREPO=rtm-yaml
+readonly SUBREPO=rtm-devtools
 
 find . -type f -name '*.rs' -print0 | xargs --null redo-ifchange
 
