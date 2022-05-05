@@ -10,7 +10,7 @@ repository = "https://github.com/rtm-rs/rtm-devtools"
 homepage = "https://rtm-rs.org"
 documentation = "https://docs.rs/rtm-devtools"
 description = """
-Rust Type Mapper (RTM) crate rtm-devtools.
+Rust Type Mapper (RTM) crate rtm-devtools: Utilities for RTM development
 """
 categories = [
     "database",
@@ -21,9 +21,12 @@ autoexamples = false
 [lib]
 name = "rtm_devtools"
 path = "src/lib.rs"
+doctest = false
 
 [dependencies]
 anyhow = "1.0.57"
+dissimilar = "1.0.2"
+regex = "1.5.5"
 thiserror = "1.0.30"
 
 [dev-dependencies]
@@ -46,4 +49,3 @@ lto = true
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
-
