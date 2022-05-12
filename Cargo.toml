@@ -14,6 +14,7 @@ Rust Type Mapper (RTM) crate rtm-devtools: Utilities for RTM development
 """
 categories = [
     "database",
+    "asynchronous",
 ]
 keywords = ["async", "orm", "cqrs", "http", "sql"]
 autoexamples = false
@@ -30,6 +31,7 @@ regex = "1.5.5"
 thiserror = "1.0.30"
 
 [dev-dependencies]
+rtm-devtools = { path = "./../rtm-devtools" }
 aquamarine = "0.1.11"
 criterion = { version = "0.3", features = ["html_reports"] }
 futures = "0.3"
