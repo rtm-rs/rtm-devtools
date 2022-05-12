@@ -4,6 +4,7 @@ set -e
 readonly SUBREPO=rtm-devtools
 
 find . -type f -name '*.rs' -print0 | xargs --null redo-ifchange
+find . -type f -name '*.toml' -print0 | xargs --null redo-ifchange
 
 pushd ./..
   git subrepo clean ${SUBREPO}
