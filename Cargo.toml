@@ -42,11 +42,7 @@ trybuild = "1"
 [features]
 # Nothing by default
 default = []
-
-[profile.bench]
-opt-level = 3
-lto = true
-
+ci = []
 
 [package.metadata.docs.rs]
 all-features = true
