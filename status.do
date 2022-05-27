@@ -14,5 +14,5 @@ pushd ./..
 popd
 
 # Even if a *.rs file has changed (above), a redo script that monitors this,
-# will see a change only if there hs been a change across results.
+# will see a change only if there has been a change across results.
 cat benches/status examples/status src/status tests/status | redo-stamp
